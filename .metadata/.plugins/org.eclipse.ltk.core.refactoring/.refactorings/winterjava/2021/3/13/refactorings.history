@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;day28exceptions&apos; to &apos;day27exceptions&apos;&#x0A;- Original project: &apos;winterjava&apos;&#x0A;- Original element: &apos;winterjava/src/day28exceptions&apos;&#x0A;- Renamed element: &apos;winterjava/src/day27exceptions&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;day28exceptions&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;day28exceptions" name="day27exceptions" qualified="false" references="true" stamp="1616339417529" textual="false" version="1.0"/>
+</session>

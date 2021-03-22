@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GitProject001&apos; to &apos;GitProjectBatch11&apos;" description="Rename resource &apos;GitProject001&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/GitProject001" name="GitProjectBatch11" stamp="1614531921805" updateReferences="true"/>
+</session>

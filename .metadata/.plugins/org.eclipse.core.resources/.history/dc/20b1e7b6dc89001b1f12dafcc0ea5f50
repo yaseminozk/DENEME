@@ -1,0 +1,57 @@
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+6)
+5)
+4)Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}

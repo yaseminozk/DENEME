@@ -1,0 +1,19 @@
+2021-02-10 16:36:18,801 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2021-02-11 11:15:06,004 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @27378547ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-02-11 11:15:06,152 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.35.v20201120; built: 2020-11-27T20:36:51.615Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+8-LTS-162
+2021-02-11 11:15:06,180 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2021-02-11 11:15:06,182 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2021-02-11 11:15:06,184 [Start Help Server] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2021-02-11 11:15:06,213 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@d34b9dc{/help,null,AVAILABLE}
+2021-02-11 11:15:06,227 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2d3d205a{HTTP/1.1, (http/1.1)}{127.0.0.1:60229}
+2021-02-11 11:15:06,227 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @27378777ms
+2021-02-11 11:15:06,227 [Start Help Server] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2021-02-27 13:43:47,519 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2d3d205a{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2021-02-27 13:43:47,531 [Stop Help Server] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+2021-02-27 13:43:47,576 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@d34b9dc{/help,null,STOPPED}
+2021-02-27 15:25:52,142 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-01 13:08:06,738 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-08 12:20:28,505 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-10 19:12:15,485 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-10 19:12:16,496 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2021-03-18 19:11:56,381 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

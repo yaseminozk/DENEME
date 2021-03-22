@@ -1,0 +1,19 @@
+
+package day20passbyvaluepassbyreferencedate;
+public class Varargs01 {
+    public static void main(String[] args) {
+        
+        System.out.println(add(-2, 17));
+    }
+    
+    public static int add(int... a) {
+        
+        int sum = 0;
+        
+        for(int w : a) {
+            sum = sum + w;
+        }
+        
+        return sum;
+    }
+}

@@ -1,0 +1,56 @@
+package week7;
+
+import java.util.Iterator;
+
+public class SimpleCalculator {
+	/*
+	 Create a calculator which has three classes
+
+ First class should be named as Simple Calculator
+ create add, subtract, multiply, divide methods in SimpleCalculator Class
+ 
+ Second class should be named as AdvancedCalculator ,
+ in this class create absoulute method and square root methods
+ 
+ Create a Runner class...
+	 */
+	public void add(double... v) {
+		double sum = 0;
+		for(double w: v) {
+			sum+=sum;
+		}
+		System.out.println("The sum is " + sum);
+	}
+	public void subtract(double... v) {
+		double difference = 0;
+		for(double w: v) {
+			difference -= w;
+		}
+		System.out.println("The sum is " + difference);
+	}
+	public void multiply(double...v) {
+		double multi = 1;
+		for(double w:v) {
+			multi*=w;
+		}
+		System.out.println("The product is" + multi);
+	}
+	public void divide(double...a) {
+		double division =a[0];
+		for(double d : a) {
+			try {
+				division/=d;
+			} catch (ArithmeticException e) {
+				System.out.println("Cannot divide by 0");
+			}
+		}
+		System.out.println("The division is =" +division);
+	}
+
+	public static void main(String[] args) {
+	
+		
+
+	}
+
+}

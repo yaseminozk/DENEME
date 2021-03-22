@@ -1,0 +1,13 @@
+Refactoring.savealleditors=true
+content_assist_autoactivation_triggers_java=.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="day13constructors.Animal"><rhs name\="day13constructors.Animal"/></lhs><lhs name\="day13constructors.Dog"><rhs name\="day13constructors.Dog"/></lhs><lhs name\="day14constructorsstatickeywordarrays.Dog"><rhs name\="day14constructorsstatickeywordarrays.Dog"/></lhs><lhs name\="day14constructorsstatickeywordarrays.StaticBlock"><rhs name\="day14constructorsstatickeywordarrays.StaticBlock"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="day23encapsulationinheritence.Mammal"><rhs name\="day23encapsulationinheritence.Dog"/></lhs><lhs name\="day23encapsulationinheritence.Animal"><rhs name\="day23encapsulationinheritence.Dog"/></lhs><lhs name\="day23encapsulationinheritence.Dog"><rhs name\="day23encapsulationinheritence.Dog"/></lhs><lhs name\="day25overridingexceptions.Animal"><rhs name\="day25overridingexceptions.Dog"/></lhs><lhs name\="day25overridingexceptions.Dog"><rhs name\="day25overridingexceptions.Dog"/></lhs><lhs name\="week7.SimpleCalculator"><rhs name\="week7.AdvanceCalculator"/></lhs><lhs name\="week7.AdvanceCalculator"><rhs name\="week7.AdvanceCalculator"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=20
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

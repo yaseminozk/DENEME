@@ -1,0 +1,1099 @@
+!SESSION 2021-03-18 19:11:42.958 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=11.0.10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/yaseminozkafa/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/yaseminozkafa/.eclipse_keyring
+
+This is a continuation of log file /Users/yaseminozkafa/eclipse-workspace/.metadata/.bak_0.log
+Created Time: 2021-03-21 17:36:28.679
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2021-03-21 17:36:28.679
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:187)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-03-21 17:36:39.889
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+System.out.println("");
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+*/
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.println("input an integer");
+int num2 = scanner3.nextInt();
+int sum = 0;
+
+if (num2<0) {
+	num2=num2*-1;
+} 
+
+while (num2!= 0) {
+	sum = sum + num2%10;
+	num2/10
+	
+}
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2021-03-21 17:36:39.890
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2021-03-21 17:36:39.890
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-03-21 17:36:40.929
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+System.out.println("");
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+*/
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.println("input an integer");
+int num2 = scanner3.nextInt();
+int sum = 0;
+
+if (num2<0) {
+	num2=num2*-1;
+} 
+
+while (num2!= 0) {
+	sum = sum + num2%10;
+	num2/10
+	
+}
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2021-03-21 17:36:40.930
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2021-03-21 17:36:40.930
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-03-21 17:36:42.192
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+System.out.println("");
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+*/
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.println("input an integer");
+int num2 = scanner3.nextInt();
+int sum = 0;
+
+if (num2<0) {
+	num2=num2*-1;
+} 
+
+while (num2!= 0) {
+	sum = sum + num2%10;
+	num2/10
+	
+}
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2021-03-21 17:36:42.193
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2021-03-21 17:36:42.193
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-03-21 17:36:44.311
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+System.out.println("");
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+*/
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.println("input an integer");
+int num2 = scanner3.nextInt();
+int sum = 0;
+
+if (num2<0) {
+	num2=num2*-1;
+} 
+
+while (num2!= 0) {
+	sum = sum + num2%10;
+	num2num2/10
+	
+}
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:474)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1141)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1318)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2021-03-21 17:36:44.313
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:474)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1141)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1318)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2021-03-21 17:36:44.313
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:474)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1141)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1318)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-03-21 17:36:44.317
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+System.out.println("");
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+*/
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.println("input an integer");
+int num2 = scanner3.nextInt();
+int sum = 0;
+
+if (num2<0) {
+	num2=num2*-1;
+} 
+
+while (num2!= 0) {
+	sum = sum + num2%10;
+	num2num2/10
+	
+}
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:187)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2021-03-21 17:36:44.318
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:187)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2021-03-21 17:36:44.318
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:187)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-03-21 17:36:44.431
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package homework;
+
+import java.util.Scanner;
+
+public class H_12_WhileLoop {
+
+	public static void main(String[] args) {
+/*1) Type java code by using while loop,
+Write a program to print numbers from 1 to 5.*/
+int i = 0;
+		while (i<5) {
+	System.out.print(i  + " ");
+	i++;
+}
+		System.out.println();
+
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number.*/
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a positive integer");
+		int num = scanner.nextInt();
+		int times= 1;
+		while (times<=10) {
+			System.out.println(num + "x" + times + "=" + (num*times));
+			times++;
+		}
+/*Type java code by using while loop.
+Write a program that types first 30 consecutive odd integers.
+*/
+		int consec = 0;
+		while (consec<=60 ) {
+			if (consec%2==1) {
+				System.out.print(consec + "-");
+				
+			}
+			consec++;
+		}
+
+System.out.println("");
+/*Type java code by using while loop,
+Write a program that prompts the user to input an integer.
+It should then find sum of the digits of that number.
+*/
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.println("input an integer");
+int num2 = scanner3.nextInt();
+int sum = 0;
+
+if (num2<0) {
+	num2=num2*-1;
+} 
+
+while (num2!= 0) {
+	sum = sum + num2%10;
+	num2num2/10
+	
+}
+
+/*Type java code by using while loop,
+Write a program that prompts the user to input a positive integer.
+It should then print factorial of that number.
+
+Type java code by using while loop,
+Write a program to count the factors of an integer
+ */
+
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2021-03-21 17:36:44.432
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2021-03-21 17:36:44.432
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1276)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2020)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3764)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1932)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1963)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3023)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1372)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2944)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3415)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3015)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3316)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1513)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:323)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1231)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:820)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:272)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:264)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:197)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

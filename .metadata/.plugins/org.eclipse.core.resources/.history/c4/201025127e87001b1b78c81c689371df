@@ -1,0 +1,13 @@
+package week7;
+
+public class CalculatorRunner {
+
+	public static void main(String[] args) {
+		
+		AdvanceCalculator obj = new AdvanceCalculator();
+		obj.add(4,5,6);
+		obj.subtract(9,2);
+
+	}
+
+}
